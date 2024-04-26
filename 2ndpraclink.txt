@@ -1,1 +1,11 @@
 http://Services.odata.org/V3/Northwind/Northwind.svc/
+
+
+
+product=id,name,perunit,stock
+
+
+order=orderdetails---expand
+new colum=custom column orderdetailprice*qunatity
+
+he column la ship county chy side la anun thevchy
