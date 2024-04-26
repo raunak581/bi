@@ -1,0 +1,1 @@
+http://Services.odata.org/V3/Northwind/Northwind.svc/
