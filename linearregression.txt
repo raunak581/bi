@@ -1,0 +1,20 @@
+data=read,csv("C:/score.csv")
+data
+plot(x=data$exam1,y=data$finalscore)
+scatter.smooth(x=data$exam1,y=data$finalscore)
+s=sample(nrow(data),.7*nrow(data))
+scoretr=data[s,]
+scoretest=data[-s,]
+scoretr
+actual_predict=data.frame(cbind(actuals=scoretest$finalscore,predicteds=pdata))
+actual_predict
+scoretest
+cor(actual_predict$actual,actual_predict$predict)
+mape=mean(abs(actual_predict$predictends - actual_predict$actual))/actual_predict$actual)*100
+mape
+maps=mean(abs(actual_predict$predictends - actual_predict$actual))/actual_predict$actual)
+maps
+
+
+
+score use krchy
